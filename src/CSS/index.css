@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+body {
+  background-color: black;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar{
+  margin-left: 2rem;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+}
+.gametypebar{
+  display:flex;
+  align-items: center;
+}
+
+.gametypebar h3{
+  color: white;
+}
+
+.gametypebar button{
+  color:black;
+  padding: 0.4rem 0.5rem;
+  background-color: rgb(254, 126, 103);
+  margin-left: 1rem;
+  border-style: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.gametypebar button:hover{
+  background-color: rgb(251, 110, 85);
+}
+
+.settings{
+  color:black;
+  background-color:white ;
+  border-radius: 0.5rem;
+  margin: 1rem 1rem;
+  padding:0.5rem;
+  width:85vw;
+}
+
+.settings button{
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  margin-right: 0.2rem;
+  border-radius: 0.5rem;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.settingsInputGrid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.settingsHvH input{
+  border: 1px black solid;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  width: 95%;
+}
+
+.settingsHvH h4{
+  margin: 0.5rem 0rem;
+}
+
+#saveBtn{
+  color:black;
+  margin-right:10em;
+}
+
+#saveBtn:hover{
+  background-color: black;
+  color: white;
+  
+}
+
+
+.game{
+  display:inline;
+  justify-content: center;
+  width:22rem;
+}
+
+
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.infobar{
+  width:90vw;
+  margin-top: 3rem;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+}
+
+.infobar h3{
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.player1{
+  border: 1px white solid;
+  
+}
+
+.controlbar{
+  width:90vw;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+
+.resetBtn{
+  color: black;
+  font-size:large;
+  font-weight: 700;
+  padding:1rem 4rem;
+  cursor: pointer;
+
+  background-color: lightgrey;
+  border-radius: 1rem;
+  border: 2px solid black;
+}
+
+.resetBtn:hover{
+  background-color: rgb(180, 179, 179);
+}
+
+.settingsBtn{
+  display:relative;
+  color: black;
+  font-size:large;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  line-height: 20px;
+
+  background-color: rgb(254, 126, 103);
+  border-radius: 1rem;
+  border: 2px solid black;
+}
+
+.settingsBtn:hover{
+  background-color:rgb(251, 110, 85);
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.contain{
+  width:fit-content
+}
+
+.board{
+  display: grid;
+  gap: 1.5vw;
+  width: 90vw;
+  height: 90vw ;
+}
+
+.card{
+  color: white;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  padding:0;
+
+  font-size: 17vw;
+  font-weight: 300;
+  
+  
+  border-color: var(--theme-grey);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5%;
+
+  background-color: rgba(0, 0, 0, 0.509);
+}
+
+.symbol{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  width:100%;
+  height:100%;
+
+  font-size: auto;
+}
+
+.blackBtn{
+  background-color: black;
+  color:white;
+}
+
+.whiteBtn{
+  background-color: lightgray;
+  color:black;
+}
+
+@media screen and (min-width: 768px) {
+ .board{
+   width: 40rem;
+   height: 40rem;
+   gap: 1rem;
+ }
+
+ .controlbar{
+   width: 40rem;
+ }
+
+ .infobar{
+   width: 40rem;
+ }
+
+ .card{
+   font-size: 7rem;
+ }
+
+ .settings{
+   width: 40rem;
+ }
+}
+
+
+
+
