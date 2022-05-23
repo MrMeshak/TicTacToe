@@ -2,7 +2,7 @@
   "name": "tictactoe-4",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://mrmeshak.github.io" , 
+  "homepage":"https://mrmeshak.github.io/tictactoe" , 
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
