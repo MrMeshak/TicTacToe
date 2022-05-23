@@ -1,8 +1,14 @@
 import React, {useState} from 'react';
+import { IPlayer } from './Game';
 import Settings from './Settings';
+
 export interface IControlbarProps {
+    players:IPlayer[];
+    boardSize:number[];
     resetBoard:Function;
+    resetBoardSize:Function;
     updatePlayerNames:Function;
+    updateBoardSize:Function;
 }
 
 export default function Controlbar (props: IControlbarProps) {
@@ -27,7 +33,7 @@ export default function Controlbar (props: IControlbarProps) {
 
     const settingsMenu = () => {
         if(showSettings === true){
-            return <Settings resetBoard={props.resetBoard} updatePlayerNames={props.updatePlayerNames} toggleSettings={toggleShowSettings}/>
+            return <Settings players = {props.players} boardSize={props.boardSize} resetBoardSize={props.resetBoardSize} updatePlayerNames={props.updatePlayerNames} updateBoardSize={props.updateBoardSize} toggleSettings={toggleShowSettings}/>
         }
     } 
     

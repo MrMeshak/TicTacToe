@@ -97,12 +97,12 @@ code {
 #saveBtn{
   color:black;
   margin-right:10em;
+  margin-top: 1rem;
 }
 
 #saveBtn:hover{
   background-color: black;
   color: white;
-  
 }
 
 

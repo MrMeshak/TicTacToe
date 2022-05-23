@@ -195,6 +195,12 @@ export default function Game (props: IGameProps) {
         setBoardState(generateBlankBoard(boardSize));
     }
 
+    const resetBoardSize = (boardSize:number[]) => {
+        setBoardSize(boardSize);
+        setWinFlag(false);
+        setBoardState(generateBlankBoard(boardSize))
+    }
+
     const makeMove = (row:number,col:number) => {
 
         if(boardState[row][col] !== 0 || winFlag === true){
@@ -215,6 +221,10 @@ export default function Game (props: IGameProps) {
         return;
     }
 
+    const updateBoardSize = (boardSize:number[]) => {  
+        setBoardSize(boardSize);
+    }
+
     
 
     
@@ -226,7 +236,7 @@ export default function Game (props: IGameProps) {
                 <div/>
             </div>
             <InfoBar currentPlayer={players[playerTurnIndex]} winFlag={winFlag}/>
-            <Controlbar resetBoard={resetBoard} updatePlayerNames={updatePlayerNames}/>
+            <Controlbar players ={players} boardSize={boardSize} resetBoard={resetBoard} resetBoardSize={resetBoardSize} updatePlayerNames={updatePlayerNames} updateBoardSize={updateBoardSize} />
         </div>
     );
 }
