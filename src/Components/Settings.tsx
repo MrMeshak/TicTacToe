@@ -62,7 +62,7 @@ export default function Settings (props: ISettingsProps) {
         return (
             <div>
                 <button className={HvHbtnClassList}>Human VS Human</button>
-                <button className={HvCbtnClassList}>Human VS Computer</button>
+                {/* <button className={HvCbtnClassList}>Human VS Computer</button> */}
             </div>
         )
 
@@ -102,9 +102,6 @@ export default function Settings (props: ISettingsProps) {
                                 <input type="text" name='p2Name' placeholder={props.players[1].name} onChange={handleChange}/>
                             </div> 
                             {boardSizeButtons()}
-                            <div>
-                                  <h4>Win Size</h4>
-                            </div>   
                         </div>
                         <button id='saveBtn' typeof='submit'>Save</button>
                     </form>

@@ -85,9 +85,10 @@ code {
 
 .settingsHvH input{
   border: 1px black solid;
+  padding: 0.5rem;
   border-radius: 0.3rem;
-  margin-bottom: 1rem;
-  width: 95%;
+  margin-bottom: 0rem;
+  width: 90%
 }
 
 .settingsHvH h4{
